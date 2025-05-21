@@ -16,7 +16,7 @@ The ninth column contains a series of option key such as GT:AD:DP with the remai
 
 The genotypes are typically 1/1 for homozygous alternative allele, 0/1 heterozygous and 0/0 wild type (generally not included)
 
-As can be seen from the description above and from viewing the [eaxmple file](data/VCF_Header.txt), VCF files can be hard to interpret. This can become even worse when viewing annotated VCF, such as this [one](data/VEP_annotated_VCF_header.txt) which was annotated by VEP. Consequently, variant data sets are generally filtered using a program or by arranging the data as tab-delimited text files which can be viewed as a spreadsheet. The chrng-*.txt files are examples of variant data from chromosome 2, 233 MB to 234 MB  annotated by Annovar.
+As can be seen from the description above and from viewing the [exmple file](data/VCF_Header.txt), VCF files can be hard to interpret. This can become even worse when viewing annotated VCF, such as this [one](data/VEP_annotated_VCF_header.txt) which was annotated by VEP. Consequently, variant data sets are generally filtered using a program or by arranging the data as tab-delimited text files which can be viewed as a spreadsheet. The chrng-*.txt files are examples of variant data from chromosome 2, 233 MB to 234 MB  annotated by [Annovar](https://annovar.openbioinformatics.org/en/latest/).
 
 ## Screening variants by eye
 
@@ -81,7 +81,7 @@ Figure 4: Filtering variant for __Pathogenic__ variants reduced the list to 1 va
 
 ![Figure 5](images/figure5.jpg)
 
-Figure 2: Filtering for variants linked to __pterygium__ phenotype reduced the list to 8 variants
+Figure 5: Filtering for variants linked to __pterygium__ phenotype reduced the list to 8 variants
 
 <hr />
 
