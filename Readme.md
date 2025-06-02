@@ -22,7 +22,7 @@ As can be seen from the description above and from viewing the [example file](da
 
 ### Getting the data 
 
-The chrng-*.txt files in the data folder contain data for two affected siblings (chrng-9 and chrng-10) and their parents and unaffected sibling. Download each file by going to the [data folder](data/) and then selecting each file in turn and pressing the download icon in the top right of the webpage (Figure 1)
+The chrng-*.txt files in the data folder contain data for two affected siblings (chrng-9 and chrng-10) and their parents and unaffected sibling. Download each file by going to the [data folder](data/) and then selecting each file in turn and pressing the download icon in the top right of the webpage (red box, Figure 1)
 
 <hr />
 
@@ -32,11 +32,14 @@ Figure 1: Clicking the tray icon downloads each current file.
 
 <hr />
 
+#### Opening a text file in Excel
+To open the file in __Excel__, first open __Excel__ using the icon on the taskbar or in the list of installed applications. Once open either navigate to the text file via __Excel__'s File menu options or drag and drop the file's icon on to __Excel__. If __Excel__ asks you to define each column, ignore the prompt and let __Excel__ do it automatically.
+
 ### Useful parameters for screening the variant data 
 
 In an Annovar annotated file, there are 229 columns that contain data on various scores and attributes of each variant. If a cell contains a "__.__", it means there is no explicit value for that parameter. 
 
-<b> values that suggest pathogenicity</b>   
+<b> Values that suggest pathogenicity</b>   
 These values can give a variant's (if known) allele frequency in different populations (i.e., ExAC_AFR = Africans, ExAC_NFE = Europeans and ExAC_SAS = South Asians), the likely pathogenicity of the variant as scored by a range of methods such as the PVS1, Polyphen and SIFT algorithms. Deleterious variants would be expected to have a very low allele frequency, PVS1, Polyphen and SIFT scores suggesting it's a likely pathogen. Many disease-causing variants are new to science and so will not have an RS ID (such as column avsnp151), however, if the disease gene is known, the causative variant may have been described before and so may have a RS ID, consequently, looking for variants with no RS ID can be good for a quick search, but should not be relied on. 
 
 Figure 2 shows the chrng-10.txt in Excel with numerous columns hidden for easy viewing.
