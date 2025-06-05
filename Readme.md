@@ -32,8 +32,8 @@ Figure 1: Clicking the tray icon downloads each current file.
 
 <hr />
 
-#### Opening a text file in Excel
-To open the file in __Excel__, first open __Excel__ using the icon on the taskbar or in the list of installed applications. Once open either navigate to the text file via __Excel__'s File menu options or drag and drop the file's icon on to __Excel__. If __Excel__ asks you to define each column, ignore the prompt and let __Excel__ do it automatically.
+### Opening a text file in Excel
+To open the file in __Excel__, first open __Excel__ using the icon on the taskbar or in the list of installed applications. Once open either navigate to the text file via __Excel__'s File menu options or drag and drop the file's icon on to __Excel__. If __Excel__ asks you to define each column, ignore the prompt and let __Excel__ do it automatically. __Also, if it asks you if you want to convert the file's format - don't__.
 
 ### Useful parameters for screening the variant data 
 
