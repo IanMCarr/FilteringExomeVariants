@@ -16,13 +16,13 @@ The ninth column contains a series of optional keys such as GT:AD:DP with the re
 
 The genotypes are typically 1/1 for homozygous alternative allele, 0/1 for heterozygous and 0/0 for wild type (generally not included in a single person VCF file).
 
-As can be seen from the description above and from viewing the [example file](data/VCF_Header.txt), VCF files can be hard to interpret. This can become even worse when viewing an annotated VCF, such as this [one](data/VEP_annotated_VCF_header.txt) which was annotated by VEP. Consequently, variant data sets are generally filtered using a program or by arranging the data as tab-delimited text files, which are then viewed as a spreadsheet. The chrng-*.txt files are examples of variant data from chromosome 2, 233 MB to 234 MB, annotated by [Annovar](https://annovar.openbioinformatics.org/en/latest/).
+As can be seen from the description above and from viewing the [example file](data/VCF_Header.txt), VCF files can be hard to interpret. This can become even worse when viewing an annotated VCF, such as this [one](data/VEP_annotated_VCF_header.txt) which was annotated by VEP. Consequently, variant data sets are generally filtered using a program or by arranging the data as tab-delimited text files, which are then viewed as a spreadsheet. The jt7*.txt files are examples of variant data from chromosome 2, 233 MB to 234 MB, annotated by [Annovar](https://annovar.openbioinformatics.org/en/latest/).
 
 ## Screening variants by eye
 
 ### Getting the data 
 
-The chrng-*.txt files in the data folder contain data for two affected siblings (chrng-9 and chrng-10) and their parents and unaffected sibling. Download each file by going to the [data folder](data/) and then selecting each file in turn and pressing the download icon in the top right of the webpage (red box, Figure 1)
+The jt7*.txt files in the data folder contain data for two affected siblings (jt709 and jt710) and their parents and unaffected sibling. Download each file by going to the [data folder](data/) and then selecting each file in turn and pressing the download icon in the top right of the webpage (red box, Figure 1)
 
 <hr />
 
@@ -42,7 +42,7 @@ In an Annovar annotated file, there are 229 columns that contain data on various
 <b> Values that suggest pathogenicity</b>   
 These values can give a variant's (if known) allele frequency in different populations (i.e., ExAC_AFR = Africans, ExAC_NFE = Europeans and ExAC_SAS = South Asians), the likely pathogenicity of the variant as scored by a range of methods such as the PVS1, Polyphen and SIFT algorithms. Deleterious variants would be expected to have a very low allele frequency, PVS1, Polyphen and SIFT scores suggesting it's a likely pathogen. Many disease-causing variants are new to science and so will not have an RS ID (such as column avsnp151), however, if the disease gene is known, the causative variant may have been described before and so may have a RS ID, consequently, looking for variants with no RS ID can be good for a quick search, but should not be relied on. 
 
-Figure 2 shows the chrng-10.txt in Excel with numerous columns hidden for easy viewing.
+Figure 2 shows the jt710.txt in Excel with numerous columns hidden for easy viewing.
 
 <hr />
 
@@ -53,7 +53,7 @@ Figure 2: An annotated file open in excel.
 <hr />
 
 ### First pass filtering
-This analysis was performed using the [example file](data/CHRNG-10_annotated.vcf.hg19_multianno.txt) file and viewed in Excel. The file was filtered by selecting the first row (with the column names) and then selecting __Sort & Filter__ > __Filter__ option in the __Editing__ section of the __Home__ ribbon.
+This analysis was performed using the [example file](data/jt710_annotated.vcf.hg19_multianno.txt) file and viewed in Excel. The file was filtered by selecting the first row (with the column names) and then selecting __Sort & Filter__ > __Filter__ option in the __Editing__ section of the __Home__ ribbon.
 
 - The first step in filtering is to remove variants in regions not mapped to the disease. (These files only contain data for chromosome 2.)
 - Most easily verified disease-causing variants are in either an exon or at a splicing site. Consequently, filter the variants for those with either exonic or splicing in the __Func.refGene__ column (column F).
@@ -85,7 +85,7 @@ Figure 4: Filtering variant for __Pathogenic__ variants reduced the list to 1 va
 
 ![Figure 5](images/figure5.jpg)
 
-Figure 5: Filtering for variants linked to the __pterygium__ phenotype reduced the list to 8 variants.
+Figure 5: Filtering for variants linked to the __multiple pterygium syndrome__ phenotype reduced the list to 8 variants.
 
 <hr />
 
