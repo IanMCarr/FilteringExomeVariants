@@ -63,7 +63,7 @@ This analysis was performed using the [example file](data/jt710_annotated.vcf.hg
 - While the data file contains pathogenicity scores from a range of scoring methods, the __InterVar_automated__ column (column N) aggregates these scores, allowing you to filter on the value Pathogenic.
 - An important value to filter on is the variant's genotype, the variant should be homozygous alternative allele (1/1) in the affected individuals and either heterozygous (0/1 or 1/0) or homozygous wild type (0/0) in unaffected individuals. 
 
-### Examples
+### Examples - JT710
 
 This strategy outlined above will identify a likely pathogenic variant in a large number of cases; if it fails, then the analysis rapidly becomes a far more complex task. The figures below show the data file shown in Figure 2 after filtering for a range of values. 
 
@@ -73,7 +73,7 @@ This strategy outlined above will identify a likely pathogenic variant in a larg
 
 ![Figure 3](images/figure3.jpg)
 
-Figure 3: Filtering variants for __exonic__ or __splicing__ and removing __synonymous SNV__ variants reduced the list to 542 variants.
+Figure 3: Filtering variants for __exonic__ or __splicing__ and removing __synonymous SNV__ variants reduced the list to around 540 variants.
 
 <hr />
 
@@ -85,7 +85,7 @@ Figure 4: Filtering variant for __Pathogenic__ variants reduced the list to 1 va
 
 ![Figure 5](images/figure5.jpg)
 
-Figure 5: Filtering for variants linked to the __multiple pterygium syndrome__ phenotype reduced the list to 8 variants.
+Figure 5: Filtering for variants linked to the __multiple pterygium syndrome__ phenotype reduced the list to less than 10 variants.
 
 <hr />
 
@@ -97,7 +97,7 @@ Figure 6: Filtering for variants in the ___CHRNG___ gene reduced the list to 2 v
 
 ![Figure 7](images/figure7.jpg)
 
-Figure 7: Filtering variants for __exonic__ or __splicing__ and removing synonymous SNV variants reduced the list to 542 variants. However, by adding a new column that only contains the first 3 characters of the last column, it is possible to filter on genotype, with 1/1 indicating the required homozygous alternative variant. This filtering reduces the list from 542 variants to 298.
+Figure 7: Filtering variants for __exonic__ or __splicing__ and removing synonymous SNV variants reduced the list to ~540 variants. However, by adding a new column that only contains the first 3 characters of the last column, it is possible to filter on genotype, with 1/1 indicating the required homozygous alternative variant. This filtering reduces the list from 542 variants to 298.
 
 The code to select the first three letters is  
 > =mid(HU1,1,3)
